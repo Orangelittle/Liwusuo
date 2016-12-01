@@ -1,0 +1,39 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/xuanzhong">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/detail_viewpager"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="parallax"
+                android:layout_height="250dp"/>
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_width="match_parent"
+            android:text="礼物说1的状态\n礼物说2的状态\n礼物说3的状态\n礼物说4的状态\n礼物说5的状态\n礼物说6的状态\n礼物说7的状态\n礼物说8的状态\n礼物说9的状态\n礼物说10的状态\n礼物说11的状态\n礼物说12的状态\n礼物说13的状态\n礼物说14的状态\n礼物说15的状态\n礼物说16的状态\n你的状态\n礼物说1的状态\n礼物说2的状态\n礼物说3的状态\n礼物说4的状态\n礼物说5的状态\n礼物说6的状态\n礼物说7的状态\n礼物说8的状态\n礼物说9的状态\n礼物说10的状态\n礼物说11的状态\n礼物说12的状态\n礼物说13的状态\n礼物说14的状态\n礼物说15的状态\n礼物说16的状态"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_lanmu_banner"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#000000"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <TextView
+                    android:id="@+id/tv_lanmu_header_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="65dp"
+                    android:gravity="center"
+                    android:textColor="@color/ShouyeBigWord"
+                    android:textSize="26sp"
+                    android:maxLines="2"
+                    tools:text="日复一签" />
+                <TextView
+                    android:id="@+id/tv_lanmu_guanzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="27dp"
+                    android:background="@drawable/guanzhubackground"
+                    android:gravity="center"
+                    android:text="     + 关注     "
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_above="@id/tv_lanmu_guanzhu"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@mipmap/icon_heart_white"
+                    android:id="@+id/tv_lanmu_top_likes_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="25dp"
+                    android:maxLines="2"
+                    android:textColor="#ffffff"
+                    tools:text="514497人喜欢" />
+            </RelativeLayout>
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="简介"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/huise"/>
+        <TextView
+            android:id="@+id/tv_lanmu_jianjie"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如果青春不会散场，时光可以珍藏。如果你的每一个米粒大小念想，都能找到与之匹配的美物安放...这样的店你会不会来？"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"/>
+        <RelativeLayout
+            android:id="@+id/rl_lanmu_chakanquanbu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:id="@+id/iv_lanmu_zhedie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_top_arrow"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看全部"
+                android:id="@+id/tv_lanmu_chakanquanbu"
+                android:layout_toLeftOf="@id/iv_lanmu_zhedie"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/qianhui"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="列表"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/huise"/>
+    </LinearLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_lanmu_details_top_background"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="#ffff0000">-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#00000000">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_lanmu_details_back"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:padding="15dp"-->
+            <!--android:src="@mipmap/ic_old_backward" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_lanmu_details_fenxiang"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="15dp"-->
+            <!--android:src="@mipmap/icon_share_down" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_lanmu_details_bar_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_toLeftOf="@id/iv_lanmu_details_fenxiang"-->
+            <!--android:layout_toRightOf="@id/iv_lanmu_details_back"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:maxEms="18"-->
+            <!--android:maxLines="1"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:textColor="#00000000"-->
+            <!--android:textSize="14sp"-->
+            <!--tools:text="不打烊的礼物店" />-->
+    <!--</RelativeLayout>-->
+</FrameLayout>

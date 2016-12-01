@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="230dp"
+        android:padding="5dp"
+        android:layout_height="220dp"
+        android:id="@+id/bangdan_cover_image_url"
+        android:src="@mipmap/image_default"
+        />
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/bangdan_short_description"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zname"
+        android:id="@+id/bangdan_name"
+        android:textSize="15sp"
+        />
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textColor="@color/xuanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:paddingLeft="3dp"
+            android:textColor="@color/xuanzhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bandan_price"
+            android:text="79"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

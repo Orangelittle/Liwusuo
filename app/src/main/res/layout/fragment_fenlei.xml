@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="lws.com.liwushuo.view.fragment.FenleiFragment">
+
+    <android.support.design.widget.TabLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:tabIndicatorColor="@color/rb_text_color"
+        app:tabSelectedTextColor="@color/rb_text_color"
+        app:tabIndicatorHeight="5dp"
+        app:tabMode="fixed"
+        android:id="@+id/tl_fenlei" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ecd5d5"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="选份走心好礼物送给ta"/>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_fenlei"/>
+
+</LinearLayout>

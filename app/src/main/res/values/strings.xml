@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LiWuShuo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">不拼功能只拼脸</string>
+    <string name="zname">迷你蓝牙自拍器</string>
+    <string name="liwu">礼物榜</string>
+</resources>

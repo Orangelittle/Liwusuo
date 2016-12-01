@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/bangdan_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="lws.com.liwushuo.view.fragment.BangdanFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/liwu"
+            android:textSize="20dp"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/share"
+            android:id="@+id/banddan_share"
+            />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/xuanzhong"
+        app:tabSelectedTextColor="@color/xuanzhong"
+        app:tabTextColor="@color/weixuanzhong"
+        android:id="@+id/bangdan_tab"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/bangdan_viewPager"
+        />
+
+</LinearLayout>

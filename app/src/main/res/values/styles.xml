@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="gonglue_share_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation" >@anim/gonglue_share_enter_window</item>
+        <item name="android:windowExitAnimation">@anim/gonglue_share_outer_window</item>
+    </style>
+    <style name="shouye_pindao_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation" >@anim/shouye_pingdao_show</item>
+        <item name="android:windowExitAnimation">@anim/shouye_pingdao_close</item>
+    </style>
+</resources>

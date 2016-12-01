@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lws.com.liwushuo.view.fragment.mine.Blank2Fragment">
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_blank_fragment" />
+     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_blank_fragment" />
+     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_blank_fragment" />
+     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_blank_fragment" />
+     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello_blank_fragment" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@mipmap/logo_title" />
+
+        <TextView
+            android:id="@+id/shouye_main_Search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/shouye_jinxuan_searchshape"
+            android:drawableLeft="@mipmap/nav_bar_icon_search_dark"
+            android:gravity="center_horizontal"
+            android:text="选份走心好礼送给Ta"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/shouye_main_topClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_gift_send_remind" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shouye_main_tabLinearLayout"
+        >
+        <TextView
+            android:id="@+id/shouye_main_changeTabText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="切换频道"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/ShouyeSmallWord"
+            android:layout_gravity="center_vertical"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/shouye_main_tablayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            app:tabSelectedTextColor="@color/rb_text_color"
+            app:tabTextColor="@color/ShouyeBigWord"
+            app:tabIndicatorColor="@color/rb_text_color"
+            app:tabMode="scrollable"
+            />
+        <ImageView
+            android:id="@+id/shouye_main_changeTabImg"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_index_down"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shouye_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

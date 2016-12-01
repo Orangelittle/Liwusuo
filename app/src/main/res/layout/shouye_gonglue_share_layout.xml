@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteBackgroud"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:id="@+id/shouye_gonglue_share_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <TextView
+            android:id="@+id/gonglue_share_wechat"
+            android:layout_columnWeight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_share_wechat"
+            android:gravity="center"
+            android:text="微信"
+            android:layout_margin="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gonglue_share_timeline"
+            android:layout_columnWeight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_share_wechat_timeline"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:text="朋友圈"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gonglue_share_QQ"
+            android:layout_columnWeight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_share_tencent_qq"
+            android:gravity="center"
+            android:text="QQ"
+            android:layout_margin="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gonglue_share_weibo"
+            android:layout_columnWeight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_share_sina_weibo"
+            android:gravity="center"
+            android:text="微博"
+            android:layout_margin="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gonglue_share_qzone"
+            android:layout_columnWeight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_share_tencent_qzone"
+            android:gravity="center"
+            android:text="Qzone"
+            android:layout_margin="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/gonglue_share_hyperlink"
+            android:layout_columnWeight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ic_share_hyperlink"
+            android:gravity="center"
+            android:layout_margin="15dp"
+            android:text="复制链接"
+            android:textSize="18sp" />
+    </GridLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/backcolorGray"
+        />
+    <TextView
+        android:id="@+id/shouye_gonglue_share_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="24sp"
+        android:textColor="@color/ShouyeBigWord"
+        android:gravity="center"
+        android:padding="8dp"
+        />
+</LinearLayout>

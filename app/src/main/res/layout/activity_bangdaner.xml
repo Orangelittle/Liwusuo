@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/bangdaner_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:paddingEnd="0dp"
+        app:paddingStart="0dp"
+        app:contentInsetStart="0dp"
+        app:titleMarginStart="0dp"
+        android:layout_height="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/xuanzhong"
+            android:elevation="10dp"
+            android:id="@+id/toolbar"
+            android:fitsSystemWindows="true"
+            android:clipToPadding="true"
+            >
+            <ImageView
+                android:id="@+id/bangdaner_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/abc_ic_ab_back_holo_dark"
+                />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/bangdaner_tabLayout"
+                android:layout_centerHorizontal="true"
+                app:tabSelectedTextColor="@color/WhiteBackgroud"
+                app:tabTextColor="@color/WhiteBackgroud"
+                app:tabIndicatorColor="@color/WhiteBackgroud"
+                android:layout_width="200dp"
+                android:layout_height="?attr/actionBarSize">
+            </android.support.design.widget.TabLayout>
+
+            <ImageView
+                android:id="@+id/bangdaner_share"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/product_comment"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/WhiteBackgroud"
+        >
+        <ImageView
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/bangdaner_shoucang"
+            android:src="@mipmap/shoucang"
+            />
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/bangdaner_fenxiang"
+            android:src="@mipmap/share"
+            />
+        <Button
+            android:padding="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/WhiteBackgroud"
+            android:id="@+id/bangdaner_goumai"
+            android:text="去天猫购买"
+            />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+

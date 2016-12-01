@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteBackgroud"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/jinxuan_listView_itemImg"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:src="@mipmap/image_default" />
+        <TextView
+            android:id="@+id/jinxuan_listview_itemTextTitle"
+            android:layout_below="@id/jinxuan_listView_itemImg"
+            android:layout_alignLeft="@id/jinxuan_listView_itemImg"
+            android:layout_alignRight="@id/jinxuan_listView_itemImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:padding="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/ShouyeBigWord"
+            android:textSize="24sp"
+            tools:text="【10月13日】忌荒废，关键词：时间" />
+        <TextView
+            android:id="@+id/jinxuan_listView_itemIntroduction"
+            android:layout_below="@id/jinxuan_listview_itemTextTitle"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            tools:text="认真工作、放肆玩上，才是对时间最大的尊重。"
+            android:layout_alignRight="@id/jinxuan_listview_itemTextTitle"
+            android:layout_alignLeft="@id/jinxuan_listview_itemTextTitle"
+            android:textColor="@color/ShouyeSmallWord"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/jinxuan_listView_separateLine"
+            android:layout_below="@id/jinxuan_listView_itemIntroduction"
+            android:background="@color/backcolorGray"
+            />
+        <TextView
+            android:id="@+id/jinxuan_listView_itemLanmu"
+            android:layout_below="@id/jinxuan_listView_separateLine"
+            android:layout_alignLeft="@id/jinxuan_listView_itemImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="栏目"
+            android:layout_marginBottom="15dp"
+            android:textSize="16sp"
+            android:textColor="@color/ShouyeSmallWord"/>
+
+        <TextView
+            android:id="@+id/jinxuan_listView_itemColumnTitle"
+            android:layout_toRightOf="@id/jinxuan_listView_itemLanmu"
+            android:layout_alignTop="@id/jinxuan_listView_itemLanmu"
+            android:textSize="16sp"
+            android:textColor="@color/ShouyeBigWord"
+            android:layout_marginLeft="10dp"
+            tools:text="日复一签"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/jinxuan_listView_itemLikeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="666"
+            android:layout_below="@id/jinxuan_listView_separateLine"
+            android:layout_alignTop="@id/jinxuan_listView_itemLanmu"
+            android:drawableLeft="@mipmap/icon_favourite_gray"
+            android:layout_alignRight="@id/jinxuan_listView_itemImg"
+            android:drawablePadding="5dp"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

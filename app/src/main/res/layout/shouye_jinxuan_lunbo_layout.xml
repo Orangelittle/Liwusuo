@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:orientation="vertical" android:layout_width="match_parent"--><!--android:layout_height="match_parent">--><!--<android.support.v4.view.ViewPager--><!--android:id="@+id/shouye_jinxuan_lunbo_viewpager"--><!--android:layout_width="match_parent"--><!--android:layout_height="200dp"/>--><!--<ImageView--><!--android:id="@+id/shouye_jinxuan_lunbo_point"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:src="@drawable/point_checked"--><!--android:padding="10dp"--><!--/>--><!--<LinearLayout--><!--android:id="@+id/shouye_jinxuan_lunbo_points"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:orientation="horizontal"--><!--android:layout_gravity="center"--><!--/>--><!--</LinearLayout>-->
+
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shouye_jinxuan_lunboViewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_aspectRatio="213%"
+        app:layout_widthPercent="100%" />
+
+    <LinearLayout
+        android:id="@+id/shouye_jinxuan_lunboPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/shouye_jinxuan_lunboPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/point_padding"
+        android:src="@drawable/point_checked"
+        tools:background="#000" />
+</android.support.percent.PercentFrameLayout>

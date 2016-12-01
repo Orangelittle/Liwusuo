@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rb_text_color">#ff0000</color>
+    <color name="black">#000</color>
+    <color name="huise">#bab7b7</color>
+    <color name="qianhui">#f2eeee</color>
+    <color name="baise">#ffffff</color>
+    <color name="PinkBackground1">#FAF5F5</color>
+    <color name="PinkBackground">#F9CCE2</color>
+    <color name="WhiteBackgroud">#FFFEFE</color>
+    <color name="ShouyeBigWord">#321E1E</color>
+    <color name="ShouyeSmallWord">#8C7878</color>
+    <color name="xuanzhong">#fd4057</color>
+    <color name="weixuanzhong">#000</color>
+    <color name="backcolorGray">#EEEEEE</color>
+    <color name="touming" >#00000000</color>
+    <color name="huishetouming">#b3b3b3</color>
+    <color name="listviewitem">#f2eeee</color>
+</resources>
